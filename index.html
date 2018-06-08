@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/symbols-sedona.css">
+	<link rel="stylesheet" type="text/css" href="css/flasher1101-normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<nav>
+				<ul class="menu clearfix">
+					<li class="menu__item"><a href="#" class="menu__link common-title">Информация</a></li>
+					<li class="menu__item"><a href="#" class="menu__link common-title">Фото и видео</a></li>
+					<li class="menu__item"><a href="#" class="menu__link common-title">Карта штата</a></li>
+					<li class="menu__item"><a href="catalog.html" class="menu__link common-title">Гостинницы</a></li>
+				</ul>
+			</nav>
+			<a href="#" class="logo"><img src="img/main-logo.png" alt="logo" width="138" height="70"></a>
+		</header>
+		<div class="main">
+			<div class="intro">
+				<img src="img/intro-text.png" alt="Welcome to Sedona. Because the Grand Canyon sucks!" class="intro__img" width="458" height="352">
+			</div>
+			<div class="reasons">
+				<h1 class="reasons__title common-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h1>
+				<p class="reasons__description common-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+				<div class="reasons__row clearfix">
+					<div class="reason reason_blue">
+						<h3 class="reason__title common-title">НАСТОЯЩИЙ<br> ГОРОДОК</h3>
+						<div class="reason__text common-text reason__number">№1</div>
+						<p class="reason__text common-text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,<br> ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+					</div>
+					<div class="reasons__picture">
+						<img src="img/reason-picture-1.jpg" alt="reason-picture-1" width="800" height="256">
+					</div>
+				</div>
+				<div class="reasons__row clearfix">
+					<div class="reason reason_icon reason_icon_house">
+						<h3 class="reason__title common-title">ЖИЛЬЕ</h3>
+						<p class="reason__text common-text">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ,<br> ВСЕ КАК В КИНО!</p>
+					</div>
+					<div class="reason reason_icon reason_icon_burger">
+						<h3 class="reason__title common-title">ЕДА</h3>
+						<p class="reason__text common-text">ВСЕГДА ЗАКАЗЫВАЯ ФИРМЕННЫЙ БУРГЕР,<br> ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+					</div>	
+					<div class="reason reason_icon reason_icon_present">
+						<h3 class="reason__title common-title">СУВЕНИРЫ</h3>
+						<p class="reason__text common-text">НЕ ТОЛЬКО КИТАЙСКОГО,<br> НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+					</div>		
+				</div>
+				<div class="reasons__row clearfix">
+					<div class="reasons__picture">
+						<img src="img/reason-picture-2.jpg" alt="reason-picture-2" width="800" height="256">
+					</div>
+					<div class="reason reason_blue">
+						<h3 class="reason__title common-title">ТАМ ЕСТЬ<br> МОСТ ДЬЯВОЛА</h3>
+						<div class="reason__text common-text reason__number">№2</div>
+						<p class="reason__text common-text">ДА, ПО НЕМУ МОЖНО ПРОЙТИ<br> ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+					</div>
+				</div>
+				<div class="reasons__row clearfix">
+					<div class="reason reason_grey">
+						<h3 class="reason__title common-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+						<div class="reason__text common-text reason__number">№3</div>
+						<p class="reason__text common-text">ВСЕ ДОСТОПРИМЕЧА­ТЕЛЬНОСТИ<br> НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+					</div>
+					<div class="reason reason_grey">
+						<h3 class="reason__title common-title">КРАСИВАЯ ДОРОГА</h3>
+						<div class="reason__text common-text reason__number">№4</div>
+						<p class="reason__text common-text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ<br> НЕ СКУЧНО!</p>
+					</div>
+					<div class="reason reason_grey">
+						<h3 class="reason__title common-title">МАЛО ТУРИСТОВ</h3>
+						<div class="reason__text common-text reason__number"> №5 </div>
+						<p class="reason__text common-text">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И<br> ТОЛПИТСЯ ТАМ</p>
+					</div>
+				</div>
+			</div>
+			<div class="search">
+				<h2 class="search__title common-title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+				<p class="search__description common-text">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>
+					И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
+				</p>
+				<a href="#" class="btn search__btn common-title search-form-open">Поиск гостинницы в Седоне</a>
+				<form action="#" class="search-form">
+						<div class="search-form__row">
+							<label for="search__checkin" class="search-form__label common-text">ДАТА ЗАЕЗДА:</label>
+							<input type="text" class="search-form__field common-text" id="search__checkin" value="24 АПРЕЛЯ 2016">
+							<button type="button" class="search-form__calendar">Каледнарь</button>
+						</div>
+						<div class="search-form__row">
+							<label for="search__checkout" class="search-form__label common-text">ДАТА выезда:</label>
+							<input type="text" class="search-form__field common-text" id="search__checkout" value="4 ИЮЛЯ 2016">
+							<button type="button" class="search-form__calendar">Каледнарь</button>
+						</div>
+						<div class="search-form__row clearfix">
+							<div class="search-form__adults">
+								<label for="adults-number" class="search-form__label common-text">ВЗРОСЛЫЕ:</label>
+								<button class="search-form__number-btn search-form__number-btn_minus" type="button">Минус</button><!-- 
+								 --><input type="text" class="search-form__field common-text search-form__number" value="2" id="adults-number"><!-- 
+								 --><button class="search-form__number-btn search-form__number-btn_plus" type="button">плюс</button>
+							</div>
+							<div class="search-form__children">
+								<label for="children-number" class="search-form__label common-text search-form__label_children">дети:</label>
+								<button class="search-form__number-btn search-form__number-btn_minus" type="button">Минус</button><!-- 
+								 --><input type="text" class="search-form__field common-text search-form__number" value="0" id="children-number"><!-- 
+								 --><button class="search-form__number-btn search-form__number-btn_plus" type="button">плюс</button>
+							</div>
+						</div>
+						<button class="search-form__submit-btn btn common-title">Найти</button>
+					</form>
+				<div class="map">
+					<h3 class="visually-hidden">Интерактивная карта</h3>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d537032.3210162849!2d-111.82104767550966!3d35.043761130347576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1528208466202" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>					
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<a class="hashtag common-title" href="#">
+				#visisedona
+			</a>
+			<div class="social-btns">
+				<a href="#" class="social-btn social-btn_tw">twitter</a>
+				<a href="#" class="social-btn social-btn_fb">facebook</a>
+				<a href="#" class="social-btn social-btn_you">youtube</a>
+			</div>
+			<div class="copyright common-text">
+				Разработано 
+				<a href="https://htmlacademy.ru/" class="copyright__html-academy copyright__link" aria-label="site of html academy">
+					<img src="img/html-academy-logo.png" alt="html academy logo" width="113" height="39">
+				</a>
+			</div>
+		</footer>
+	</div>
+	<script>
+		var open = document.querySelector(".search-form-open");
+		var search_form = document.querySelector(".search-form");
+
+		open.addEventListener("click", function(event) {
+			event.preventDefault();
+			search_form.classList.toggle("modal-show");
+		})
+
+	</script>
+</body>
+</html>

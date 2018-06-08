@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/symbols-sedona.css">
+	<link rel="stylesheet" type="text/css" href="css/flasher1101-normalize.css">
+	<link rel="stylesheet" href="css/style.css">	
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<nav>
+				<ul class="menu clearfix">
+					<li class="menu__item"><a href="#" class="menu__link common-title">Информация</a></li>
+					<li class="menu__item"><a href="#" class="menu__link common-title">Фото и видео</a></li>
+					<li class="menu__item"><a href="#" class="menu__link common-title">Карта штата</a></li>
+					<li class="menu__item"><a href="#" class="menu__link common-title">Гостинницы</a></li>
+				</ul>
+			</nav>
+			<a href="index.html" class="logo"><img src="img/main-logo.png" alt="logo" width="138" height="70"></a>
+		</header>
+		<div class="main">
+		<h1 class="visually-hidden">Hotels</h1>			
+			<form action="#" class="filters clearfix">
+				<h2 class="visually-hidden">filters form</h2>
+				<fieldset class="filters__fieldset">
+					<legend class="filters__legend common-title">Инфраструктура:</legend>
+					<p class="filters__row">
+						<input type="checkbox" class="filters__checkbox" id="pool" checked>
+						<label for="pool" class="filters__label common-text">Бассейн</label>
+					</p>
+					<p class="filters__row">
+						<input type="checkbox" class="filters__checkbox" id="parking">
+						<label for="parking" class="filters__label common-text">Парковка</label>
+					</p>
+					<p class="filters__row">
+						<input type="checkbox" class="filters__checkbox" id="wi-fi">
+						<label for="wi-fi" class="filters__label common-text" for="wi-fi">WI-FI</label>
+					</p>
+				</fieldset>
+				<fieldset class="filters__fieldset">
+					<legend class="filters__legend common-title">Тип жилья:</legend>
+					<p class="filters__row">
+						<input type="checkbox" class="filters__checkbox" id="hotel" checked>
+						<label for="hotel" class="filters__label common-text">Гостиница</label>
+					</p>
+					<p class="filters__row">
+						<input type="checkbox" class="filters__checkbox" id="motel" checked>
+						<label for="motel" class="filters__label common-text">Мотель</label>
+					</p>
+					<p class="filters__row">
+						<input type="checkbox" class="filters__checkbox" id="apartments" checked>
+						<label for="apartments" class="filters__label common-text" for="wi-fi">Апартаменты</label>
+					</p>
+				</fieldset>
+				<fieldset class="filters__price-filter">
+					<legend class="filters__legend filters__legend_price common-title">Стоимость в сутки (Р):</legend>
+					<p class="filters__price-wrap">
+						<span class="filters__price-from">
+							<label for="min-price" class="filters__price-label common-text">От</label>
+							<input type="number" class="filters__price-input common-text" name="price-input-min" id="min-price" value="0">
+						</span>
+						<span class="filters__price-to">
+							<label for="max-price" class="filters__price-label common-text">До</label>
+							<input type="number" class="filters__price-input common-text" name="price-input-max" id="max-price" value="3000">
+						</span>
+					</p>
+					<p class="filters__price-range-controls">
+						<span class="filters__scale">
+							<span class="filters__price-range" style="width: 70%;"></span>
+						</span>
+						<span class="toggle min-toggle" style="left: -2px;"></span>
+						<span class="toggle max-toggle" style="left: 200px;"></span>
+					</p>
+					<button class="filters__submit common-text" type="submit">Показать</button>
+				</fieldset>
+			</form>	
+			<section class="sorting clearfix">
+				<h2 class="visually-hidden">Sorting</h2>
+				<div class="sorting__result-number common-title">Найдено: <span>3</span></div>
+				<div class="sorting__controls">
+					<span class="sorting__method common-text sorting-text">Сортировка:</span>
+					<a href="#" class="sorting__control common-text sorting-text">По цене</a>
+					<a href="#" class="sorting__control common-text sorting-text">По типу</a>
+					<a href="#" class="sorting__control common-text sorting-text">По рейтингу</a>					
+				</div>
+				<div class="sorting__direction">
+					<a href="#" class="icon-up-dir sorting__direction-arrow"></a>
+					<a href="#" class="icon-down-dir sorting__direction-arrow sorting__direction-arrow_active"></a>
+				</div>
+			</section>
+			<section class="hotels">
+				<h2 class="visually-hidden">hotels list</h2>
+				<ul class="hotels__list">
+					<li class="hotels__item clearfix">
+						<img src="img/amara-resort.jpg" alt="" class="hotels__img">
+						<div class="hotels__col1">
+							<h3 class="hotels__title common-title">AMARA RESORT & SPA</h3>
+							<div class="hotels__price">
+								<span class="hotels__type common-text">Гостинница</span>
+								<span class="hotels__price-from common-text">От <span>3500</span> Р.</span>
+							</div>
+							<div class="hotels__buttons">
+								<a href="#" class="hotels__more-link btn common-text">Подробнее</a>
+								<a href="#" class="hotels__book btn common-text">Забронировать</a>
+							</div>
+						</div>
+						<div class="hotels__rating">
+							<div class="hotels__rating-stars">
+								<span class="hotels__rating-star icon-star"></span>
+								<span class="hotels__rating-star icon-star"></span>
+								<span class="hotels__rating-star icon-star"></span>
+								<span class="hotels__rating-star icon-star"></span>
+							</div>
+							<div class="hotels__rating-number common-text">
+								Рейтинг: <span>8,5</span>
+							</div>
+						</div>
+					</li>
+					<li class="hotels__item clearfix">
+						<img src="img/desert-qual.jpg" alt="" class="hotels__img">
+						<div class="hotels__col1">
+							<h3 class="hotels__title common-title">DESERT QUAIL INN</h3>
+							<div class="hotels__price">
+								<span class="hotels__type common-text">Мотель</span>
+								<span class="hotels__price-from common-text">От <span>2000</span> Р.</span>
+							</div>
+							<div class="hotels__buttons">
+								<a href="#" class="hotels__more-link btn common-text">Подробнее</a>
+								<a href="#" class="hotels__book btn common-text">Забронировать</a>
+							</div>
+						</div>
+						<div class="hotels__rating">
+							<div class="hotels__rating-stars">
+								<span class="hotels__rating-star icon-star"></span>
+								<span class="hotels__rating-star icon-star"></span>
+							</div>
+							<div class="hotels__rating-number common-text">
+								Рейтинг: <span>130%</span>
+							</div>
+						</div>
+					</li>
+					<li class="hotels__item clearfix">
+						<img src="img/villas-at.jpg" alt="" class="hotels__img">
+						<div class="hotels__col1">
+							<h3 class="hotels__title common-title">VILLAS AT POCO DIABLO</h3>
+							<div class="hotels__price">
+								<span class="hotels__type common-text">Апартаменты</span>
+								<span class="hotels__price-from common-text">От <span>4000</span> Р.</span>
+							</div>
+							<div class="hotels__buttons">
+								<a href="#" class="hotels__more-link btn common-text">Подробнее</a>
+								<a href="#" class="hotels__book btn common-text">Забронировать</a>
+							</div>
+						</div>
+						<div class="hotels__rating">
+							<div class="hotels__rating-stars">								
+								<span class="hotels__rating-star icon-star"></span>
+								<span class="hotels__rating-star icon-star"></span>
+								<span class="hotels__rating-star icon-star"></span>
+							</div>
+							<div class="hotels__rating-number common-text">
+								Рейтинг: <span>говно</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>		
+		</div>			
+		<footer class="footer">
+			<a class="hashtag common-title">
+				#visisedona
+			</a>
+			<div class="social-btns">
+				<a href="#" class="social-btn social-btn_tw">twitter</a>
+				<a href="#" class="social-btn social-btn_fb">facebook</a>
+				<a href="#" class="social-btn social-btn_you">youtube</a>
+			</div>
+			<div class="copyright common-text">
+				Разработано 
+				<a href="https://htmlacademy.ru/" class="copyright__html-academy copyright__link" aria-label="site of html academy">
+					<img src="img/html-academy-logo.png" alt="html academy logo" width="113" height="39">
+				</a>
+			</div>
+		</footer>
+	</div>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
